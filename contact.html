@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body
+{
+  margin: 0;
+  /* font-family: Arial, Helvetica, sans-serif; georgia; */
+}
+
+.top-container {
+  background-color: #8900f2;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; georgia;
+}
+.header {
+  padding: 10px 16px;
+  background: #a100f2;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.experience {
+  padding: 16px;
+}
+
+/* .ul-experience {
+  color: #ffce1f;
+} */
+
+.footer-container {
+  background-color: #d100d1;
+  padding: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+<link rel="icon" type="image/x-icon" href="/img/toga.png">
+<title>Muhamad S</title>
+</head>
+<body>
+
+<div class="top-container">
+  <h1>Curriculum Vitae</h1>
+  <p>Muhamad Saripudin A.Md.Kom</p>
+</div>
+
+<div class="header" id="myHeader">
+  <table>
+    <tr>
+      <td>
+        <img
+        width="70"
+        height="70"src="img/pp.png"
+        alt="Photo Profile">
+      </td>
+      <td>   </td>
+      <td><h2>Muhamad Saripudin A.Md.Kom</h2></td>
+    </tr>
+    <!-- <table width="100%">
+      <tr>
+        <th><a href="index.html">About</a></th>
+        <th><a href="contact.html" >Contact</a></th>
+        <th>Sertifikasi</th>
+      </tr>
+    </table> -->
+  </table>
+
+<footer align="center">
+    <div class="footer-container" bgcolor="#f20089">
+      <a href="https://wa.me/6282119041603" target="_blank">Contact</a>
+      <p><font></font></p>
+    </div>
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
